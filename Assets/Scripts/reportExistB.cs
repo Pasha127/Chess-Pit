@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class reportExistB : MonoBehaviour
+{
+    private GameManager gameManager;
+
+    // Start is called before the first frame update
+    void Awake()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+        gameManager.blackPieces.Add(this.gameObject);
+    }
+
+    // Update is called once per frame
+    void OnDestroy()
+    {
+        gameManager.whitePieces.Remove(this.gameObject);
+    }
+}
