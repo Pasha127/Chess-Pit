@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class SelectPiece : MonoBehaviour
+public class SelectPlace : MonoBehaviour
 {
     GameManager gameManager;
     public Material selectEffectMaterial;
-    public string pieceType;
-    public string pieceColor;
 
     // Start is called before the first frame update
     private void Start()
@@ -20,7 +18,7 @@ public class SelectPiece : MonoBehaviour
     {
         if (this.gameObject != null && selectEffectMaterial != null)
         {
-            this.gameObject.GetComponent<MeshRenderer>().material=selectEffectMaterial;
+            this.gameObject.GetComponent<MeshRenderer>().material = selectEffectMaterial;
         }
     }
 }

@@ -112,6 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectEffectMaterial: {fileID: 2100000, guid: 92de5dc237a23244db35a2fa84439a54,
     type: 2}
+  pieceType: pawn
+  pieceColor: white
 --- !u!136 &4923485639553765726
 CapsuleCollider:
   m_ObjectHideFlags: 0

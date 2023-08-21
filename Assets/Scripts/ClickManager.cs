@@ -9,14 +9,14 @@ public class ClickManager : MonoBehaviour
 
     private void Awake()
     {
-         cam = Camera.main;
-         gameManager = this.gameObject.GetComponent<GameManager>();
+        cam = Camera.main;
+        gameManager = this.gameObject.GetComponent<GameManager>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-       
+
     }
 
     // Update is called once per frame
@@ -41,16 +41,25 @@ public class ClickManager : MonoBehaviour
 
     private void HandleClickedObject(GameObject clickedObject)
     {
-        if (gameManager.isWhiteTurn && clickedObject.tag == "wht_piece")
+        SelectPiece selectPieceComponent = clickedObject.GetComponent<SelectPiece>();
+        if (selectPieceComponent == null)
         {
-            clickedObject.GetComponent<SelectPiece>().selectEffect();
-            //gameManager.switchPlayer();
-        };
-        if (!gameManager.isWhiteTurn && clickedObject.tag == "blk_piece")
+            Debug.LogError("SelectPiece component not found on clicked object: " + clickedObject.name);
+            return;
+        }       
+        if (gameManager.isWhiteTurn && selectPieceComponent.pieceColor == "white")
         {
-            clickedObject.GetComponent<SelectPiece>().selectEffect();
-            //gameManager.switchPlayer();
-        };
+            if (selectPieceComponent) {
+            gameManager.pieceSelected(clickedObject, selectPieceComponent, true);
+            }
+        }
+        if (!gameManager.isWhiteTurn && selectPieceComponent.pieceColor == "black")
+        {
+            
+            if (selectPieceComponent) { 
+            gameManager.pieceSelected(clickedObject, selectPieceComponent, false);
+            }
+        }
 
 
         //Debug.Log("Clicked object: " + clickedObject.name);

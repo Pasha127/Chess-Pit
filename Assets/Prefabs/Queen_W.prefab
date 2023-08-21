@@ -112,6 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectEffectMaterial: {fileID: 2100000, guid: 92de5dc237a23244db35a2fa84439a54,
     type: 2}
+  pieceType: queen
+  pieceColor: white
 --- !u!136 &5814964550947437147
 CapsuleCollider:
   m_ObjectHideFlags: 0
