@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3024153411252458082}
   - component: {fileID: 5672178287747998495}
   - component: {fileID: 3574353531557371338}
+  - component: {fileID: 3611521898532191640}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 764323228907323573}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4396615, y: 1.5567125, z: -0.9941231}
+  m_LocalPosition: {x: 2.4396615, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -105,6 +106,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3611521898532191640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764323228907323573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ccbea6c7b2239458a593f2ad357743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectEffectMaterial: {fileID: 2100000, guid: 92de5dc237a23244db35a2fa84439a54,
+    type: 2}
 --- !u!1 &1578246135381108743
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +132,7 @@ GameObject:
   - component: {fileID: 4199850026848230407}
   - component: {fileID: 5205075370683824268}
   - component: {fileID: 3377934567436722280}
+  - component: {fileID: 7789542840355220485}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -133,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 1578246135381108743}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4396615, y: 1.5567125, z: -0.9941231}
+  m_LocalPosition: {x: 1.4396615, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -210,6 +226,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7789542840355220485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578246135381108743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ccbea6c7b2239458a593f2ad357743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectEffectMaterial: {fileID: 2100000, guid: 92de5dc237a23244db35a2fa84439a54,
+    type: 2}
 --- !u!1 &2046481406468625219
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +265,7 @@ Transform:
   m_GameObject: {fileID: 2046481406468625219}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.4396615, y: -1.6567125, z: 0.9941231}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -261,6 +291,7 @@ GameObject:
   - component: {fileID: 3487886455738984326}
   - component: {fileID: 4144309011190217521}
   - component: {fileID: 1778862931704808749}
+  - component: {fileID: 7004928050191689521}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -277,7 +308,7 @@ Transform:
   m_GameObject: {fileID: 2856067380528397382}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4396615, y: 1.5567125, z: -0.9941231}
+  m_LocalPosition: {x: 0.4396615, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -354,6 +385,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7004928050191689521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2856067380528397382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ccbea6c7b2239458a593f2ad357743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectEffectMaterial: {fileID: 2100000, guid: 92de5dc237a23244db35a2fa84439a54,
+    type: 2}
 --- !u!1 &3981112799881610832
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +411,7 @@ GameObject:
   - component: {fileID: 2055332986190381424}
   - component: {fileID: 6717420124105854683}
   - component: {fileID: 2079237043671999289}
+  - component: {fileID: 2404364837061707193}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -382,7 +428,7 @@ Transform:
   m_GameObject: {fileID: 3981112799881610832}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.4396615, y: 1.5567125, z: -0.9941231}
+  m_LocalPosition: {x: 4.4396615, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -459,6 +505,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2404364837061707193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981112799881610832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ccbea6c7b2239458a593f2ad357743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectEffectMaterial: {fileID: 2100000, guid: 92de5dc237a23244db35a2fa84439a54,
+    type: 2}
 --- !u!1 &4205101788642181450
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +531,7 @@ GameObject:
   - component: {fileID: 3419025433051033585}
   - component: {fileID: 3035869202268779249}
   - component: {fileID: 5800760275704216250}
+  - component: {fileID: 1241733309768305861}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -487,7 +548,7 @@ Transform:
   m_GameObject: {fileID: 4205101788642181450}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4396615, y: 1.5567125, z: -0.9941231}
+  m_LocalPosition: {x: 3.4396615, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -564,6 +625,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1241733309768305861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4205101788642181450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ccbea6c7b2239458a593f2ad357743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectEffectMaterial: {fileID: 2100000, guid: 92de5dc237a23244db35a2fa84439a54,
+    type: 2}
 --- !u!1 &7885880813501441909
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +651,7 @@ GameObject:
   - component: {fileID: 152616751651160793}
   - component: {fileID: 8275942444234822117}
   - component: {fileID: 5907982427813738907}
+  - component: {fileID: 5300363765276191101}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -592,7 +668,7 @@ Transform:
   m_GameObject: {fileID: 7885880813501441909}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.4396615, y: 1.5567125, z: -0.9941231}
+  m_LocalPosition: {x: 5.4396615, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -669,6 +745,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5300363765276191101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7885880813501441909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ccbea6c7b2239458a593f2ad357743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectEffectMaterial: {fileID: 2100000, guid: 92de5dc237a23244db35a2fa84439a54,
+    type: 2}
 --- !u!1 &8763704211602848381
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,6 +771,7 @@ GameObject:
   - component: {fileID: 6144461797663188724}
   - component: {fileID: 6988477363510679164}
   - component: {fileID: 5606635782307955010}
+  - component: {fileID: 6335283513021746170}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -697,7 +788,7 @@ Transform:
   m_GameObject: {fileID: 8763704211602848381}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5603385, y: 1.5567125, z: -0.9941231}
+  m_LocalPosition: {x: -0.5603385, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -774,6 +865,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6335283513021746170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8763704211602848381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ccbea6c7b2239458a593f2ad357743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectEffectMaterial: {fileID: 2100000, guid: 92de5dc237a23244db35a2fa84439a54,
+    type: 2}
 --- !u!1 &9187549444765315942
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +891,7 @@ GameObject:
   - component: {fileID: 8949733110811853819}
   - component: {fileID: 6342511517320481868}
   - component: {fileID: 1680266200073382398}
+  - component: {fileID: 5875284136369615650}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -802,7 +908,7 @@ Transform:
   m_GameObject: {fileID: 9187549444765315942}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.4396615, y: 1.5567125, z: -0.9941231}
+  m_LocalPosition: {x: 6.4396615, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -879,3 +985,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5875284136369615650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9187549444765315942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ccbea6c7b2239458a593f2ad357743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectEffectMaterial: {fileID: 2100000, guid: 92de5dc237a23244db35a2fa84439a54,
+    type: 2}

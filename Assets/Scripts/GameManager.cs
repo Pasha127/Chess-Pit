@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-      
+
     }
 
     // Update is called once per frame
@@ -37,16 +37,17 @@ public class GameManager : MonoBehaviour
         else
         {
             cam.transform.position = camPointW.position;
-            cam.transform.rotation = camPointW.rotation;  
-        }         
+            cam.transform.rotation = camPointW.rotation;
+        }
         isWhiteTurn = !isWhiteTurn;
     }
 
-    public void pieceSelected(GameObject go, SelectPiece selecPieceComp, bool isWhite) {
+    public void pieceSelected(GameObject go, SelectPiece selecPieceComp, bool isWhite)
+    {
         selecPieceComp.selectEffect();
         this.selectedPiece = go;
         this.selectedPieceComponent = selecPieceComp;
-             
+
         //switchPlayer();
     }
     public void clearSelection()
@@ -58,7 +59,51 @@ public class GameManager : MonoBehaviour
     public void findPlaces()
     {
         if (selectedPiece == null) { return; }
+        Vector3 anchor = selectedPiece.transform.position;
+        
         List<GameObject> places = new List<GameObject>();
+
+
+        switch (selectedPieceComponent.pieceType)
+        {
+            case "pawn":
+                //add custom loop logic for each case?
+                break;
+            case "rook":
+                break;
+            case "knight":
+                break;
+            case "bishop":
+                break;
+            case "king":
+                break;
+            case "queen":
+                break;
+            default:
+                throw new Exception("impossible case reached");
+
+        }
+
         //create overlapping sphere cast to find places according to distance and direction from piece. 
+        List<SelectPlace> selectPlaceComps = new List<SelectPlace>(); 
+        Collider[] colliders = Physics.OverlapSphere(ray.origin, 3f);
+
+        foreach (Collider collider in colliders)
+        {
+            GameObject go = collider.gameObject;
+            if (go != null)
+            {
+                SelectPlace placeComp = go.GetComponent<SelectPlace>();
+                if (placeComp != null)
+                {
+                    selectPlaceComps.Add(placeComp);
+                };
+            }
+        }
+        //TODO: nest me correctly
+        foreach (SelectPlace selector in selectPlaceComps)
+        {
+            selector.selectEffect();
+        }
     }
 }
